@@ -1,0 +1,17 @@
+1. Appointment
+Purpose: To schedule and record all appointments between students and consultants, including purpose, date, time, and location. Key Fields: Appointment Date, Time, Purpose, Consultant, Student, Location, Status. Relationships: Linked to Consultants and Students for tracking who attended each appointment.
+
+2. Course
+Purpose: To manage details of all courses offered by the institution, including course content, duration, and fees. Key Fields: Course Name, Duration, Start Date, End Date, Fee, Description, Course Code. Relationships: Associated with Students for enrollment tracking and Consultants for course facilitation.
+
+3. Student
+Purpose: To maintain records of all students, including their enrollment, contact information, and course registrations. Key Fields: Student ID, Name, Contact Information, Email, Enrollment Date, Assigned Courses. Relationships: Connected to Courses for tracking registered classes, Consultants for mentorship, and Appointments for consultations.
+
+4. Consultant
+Purpose: To manage information about consultants who provide guidance, support, or instruction for students and courses. Key Fields: Consultant Name, Contact Information, Specialization, Availability, Assigned Courses. Relationships: Linked to Students for mentorship, Courses for instructional responsibilities, and Appointments for tracking consultations.
+
+5. Registration
+Purpose: To document student registrations for various courses, including registration date, status, and payment details. Key Fields: Registration ID, Student Name, Course Name, Registration Date, Payment Status, Registration Status. Relationships: Tied to Students and Courses to track who is registered in each course and to manage the enrollment process.
+
+6. Cases
+Purpose: To track issues, queries, or support cases raised by students or consultants, enabling streamlined resolution. Key Fields: Case ID, Issue Type, Priority, Status, Resolution Date, Assigned Consultant. Relationships: Linked to Students and Consultants for tracking case ownership and to Appointments for resolution-related consultations.
