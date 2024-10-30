@@ -1,0 +1,33 @@
+1.EduConsultPro Student Flow (V4):
+Purpose: This flow seems designed to handle student registrations based on selected courses.
+Process:
+Starts with gathering student information and creating a student record.
+Presents a course selection screen, leading to a decision point where different paths are taken based on the course selected (e.g., MPC, BIPC, ELECTRONICS, ELECTRICAL, COMPUTERS).
+Each course branch retrieves specific records and creates registration records.
+After registration, the flow sends an email to the student and displays a success screen.
+
+2.EduConsultPro Existing Student Flow (V2):
+Purpose: This flow handles cases for existing students, helping them book appointments or create cases.
+Process:
+It begins by retrieving student information and relevant records.
+At a decision point, it determines whether the student needs an "Appointment" or a "Case."
+For appointments, it leads to a booking screen, finds available consultants, and finalizes the appointment with a confirmation.
+For cases, it creates a new case for the student and ends the flow.
+
+3.EduConsultPro Main Flow (V1):
+Purpose: This main flow decides if the student is new or existing and directs them to the appropriate subflow.
+Process:
+Starts with a welcome screen and a confirmation to check if the student is existing or new.
+Based on the decision:
+Existing Student: It calls the "Existing Student Flow," presumably the second flow.
+New Student: It calls the "New Student Flow," likely the first flow.
+Ends after the appropriate subflow completes.
+
+4. EduConsultPro Approval Flow (V4):
+Purpose: This approval flow automates the approval process for student-related records, triggered by specific record events.
+Process:Record-Triggered Flow (Start): The flow initiates immediately upon a record change that meets the trigger conditions. 
+This means any record that matches specific criteria will start the approval process without manual intervention.
+Approval SubFlow: After triggering, the flow calls an Approval SubFlow. 
+This subflow handles specific actions needed for the approval process, such as routing approval requests to appropriate team members or updating the record’s status based on the decision.
+End: The flow concludes after the approval process completes, marking the record's status or performing other final actions as needed.
+
